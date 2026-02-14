@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Mi San Valentín ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Outfit:wght@300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Envelope Overlay -->
+    <div id="envelope-container" class="envelope-container">
+        <div class="envelope" id="envelope">
+            <div class="front flap"></div>
+            <div class="front pocket"></div>
+            <div class="letter">
+                <div class="text">
+                    <p>Para ti ❤️</p>
+                </div>
+            </div>
+            <div class="hearts">
+                <div class="heart a1"></div>
+                <div class="heart a2"></div>
+                <div class="heart a3"></div>
+            </div>
+        </div>
+        <p class="click-hint">Haz click en el sobre 💌</p>
+    </div>
+
+    <!-- Main Content (Hidden initially) -->
+    <main id="main-content" class="hidden">
+        <header>
+            <h1>Feliz San Valentín Mi Chinicita Preciosa ❤️</h1>
+        </header>
+
+        <section class="love-letter">
+            <div class="paper">
+                <h2>Mi Carta Para Mi Cosita Bien Hecha</h2>
+                <p id="main-letter-text">
+                    Hola mi vida,
+                    <br><br>
+                    Este es un pequeño detalle para recordarte lo mucho que te amo. Eres la persona más especial para mi
+                    y cada día que estamos juntos es un regalo mi amor.
+                    <br><br>
+                    Como no estamos juntos en persona, quise mostrarte algunos de nuestros momentos juntos...
+                    PD: Ya es hora de renovar el álbum de fotos!
+                </p>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h2>Nuestros Recuerdos 📸</h2>
+            <p class="subtitle">Haz click en cada fotito </p>
+            <div class="gallery" id="gallery">
+                <!-- Photos will be injected here by JS -->
+            </div>
+        </section>
+
+        <footer>
+            <p>Hecho con todo mi amor para mi bebita ❤️ - 14 de Febrero, 2026</p>
+        </footer>
+    </main>
+
+    <!-- Modal for Photo Details -->
+    <div id="photo-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img id="modal-img" src="" alt="Recuerdo">
+            <p id="modal-message"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
